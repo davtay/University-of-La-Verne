@@ -3,6 +3,9 @@
 // Course: CMPS 371
 // Assignment: Handout 2 Problem 1
 // Due Date: Thursday 2/24/2022
+// Purpose: This application computes
+// the volume and surface area of
+// inputted dimensions.
 //--------------------------------------
 #include <iostream>
 using namespace std;
@@ -16,24 +19,24 @@ int main()
 
     _asm
     {
-        mov     eax, leng;
-        imul    width;
-        imul    height;
-        mov     volume, eax;
-        mov     eax, leng;
-        imul    width;
-        imul    a;
-        mov     ebx, eax;
-        mov     eax, leng;
-        imul    height;
-        imul    a;
-        mov     ecx, eax;
-        mov     eax, width;
-        imul    height;
-        imul    a;
-        add     eax, ebx;
-        add     eax, ecx;
-        mov     sarea, eax;
+        mov     	eax, leng;
+        imul    	width;
+        imul    	height;
+        mov     	volume, eax;
+        mov     	eax, leng;
+        imul    	width;
+        imul    	a;
+        mov     	ebx, eax;
+        mov     	eax, leng;
+        imul    	height;
+        imul    	a;
+        mov     	ecx, eax;
+        mov     	eax, width;
+        imul    	height;
+        imul    	a;
+        add     	eax, ebx;
+        add     	eax, ecx;
+        mov     	sarea, eax;
     }
 
     cout << "Volume = " << volume << endl;
