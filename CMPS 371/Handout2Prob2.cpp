@@ -3,6 +3,8 @@
 // Course: CMPS 371
 // Assignment: Handout 2 Problem 2
 // Due Date: Thursday 2/24/2022
+// Purpose: This application computes
+// the total bill.
 //--------------------------------------
 #include <iostream>
 using namespace std;
@@ -22,10 +24,10 @@ int main()
 	_asm
 	{
 		mov		ax, drink_cost;
-		imul	drinks;
+		imul		drinks;
 		mov		bx, ax;
 		mov		ax, sw_cost;
-		imul	sandwiches;
+		imul		sandwiches;
 		add		ax, bx;
 		mov		total, ax;
 	}
