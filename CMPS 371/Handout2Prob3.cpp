@@ -22,7 +22,7 @@ int main()
 		add		eax, exam2;
 		add		eax, exam3;
 		cdq;
-		idiv	number;
+		idiv		number;
 		mov		avg, eax;
 	}
 
