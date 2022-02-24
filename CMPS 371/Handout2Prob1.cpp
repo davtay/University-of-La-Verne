@@ -7,14 +7,14 @@
 #include <iostream>
 using namespace std;
 
-int leng, width, height, volume, sarea;
-int a = 2;
+int leng, width, height, volume, sarea, a = 2;
 
 int main()
 {
     cout << "Please enter the length, width, and height of your object: ";
     cin >> leng >> width >> height;
-    __asm
+
+    _asm
     {
         mov     eax, leng;
         imul    width;
